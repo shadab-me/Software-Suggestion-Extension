@@ -1,17 +1,19 @@
-chrome.runtime.onInstalled.addListener(function() {
-    chrome.storage.sync.set({color: '#3aa757'}, function() {
-      console.log('The color is green.');
-    });
-    
-    chrome.declarativeContent.onPageChanged.removeRules(undefined, function() {
-      chrome.declarativeContent.onPageChanged.addRules([{
-        conditions: [new chrome.declarativeContent.PageStateMatcher({
-          pageUrl: {hostEquals: 'developer.chrome.com'},
-        })
-        ],
-            actions: [new chrome.declarativeContent.ShowPageAction()]
-      }]);
-    });
+console.log("Loaded extension");
 
-    
-  });
+
+function blockRequest(details) {
+   return {cancel: true};
+}
+
+function updateFilters(urls) {
+   console.log(chrome.webRequest)
+    if(chrome.webRequest.onBeforeRequest.hasListener(blockRequest))
+     chrome.webRequest.onBeforeRequest.removeListener(blockRequest);
+     chrome.webRequest.onBeforeRequest.addListener(blockRequest, {urls: ["*://*.youtube.com/*", "*://*.youtube.net/*"]}, ['blocking']);
+}
+
+updateFilters();
+console.log(updateFilters())
+
+console.log('Hey')
+ 
