@@ -12,6 +12,7 @@ let software = list[RandomSoftware()];
   name.innerText = software.name.split('-')[0];
   des.innerText = software.description;
   link.href = software.Download;
+  link.innerText = software.Download;
   console.log(software.Download)
  }
 
