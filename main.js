@@ -1,9 +1,16 @@
+let name = document.querySelector('#software-name');
+let link = document.querySelector('#software-link');
+let des = document.querySelector('#software-des');
+
 function RandomSoftware(arr){
-   console.log(Math.floor(Math.random() * list.length)+1);
+   return (Math.floor(Math.random() * list.length)+1);
 }
-RandomSoftware();
+function CreateUi(){
+let software = list[RandomSoftware()];
+  name.innerText = software.name.split('-')[0];
+  des.innerText = software.description;
+  link.href = software.Download;
+  console.log(software.Download)
+ }
 
-
-list.forEach((item) => {
-   console.log(item.name)
-})
+CreateUi();
