@@ -1,4 +1,3 @@
-
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -12,8 +11,8 @@ applet,
 object,
 iframe,
 h1,
-h2,`
-h3,
+h2,
+` h3,
 h4,
 h5,
 h6,
@@ -161,7 +160,7 @@ a {
 
 }
 
- 
+
 
 #user {
     font-size: 40px;
@@ -183,7 +182,7 @@ a {
 
 .Software {
     border-radius: 50px
- }
+}
 
 #software-name {
     font-size: 35px;
@@ -192,11 +191,10 @@ a {
     font-weight: 700;
     background-color: #f2f2ff;
     padding-left: 66px;
-     border-radius: 15px;
+    border-radius: 15px;
 }
-#software-name:hover{
- 
-}
+
+#software-name:hover {}
 
 
 .description p {
@@ -216,7 +214,7 @@ a {
 
 #website-link {
     font-size: 25px;
-  
+
 }
 
 
