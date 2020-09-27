@@ -17,13 +17,13 @@ let list = [
     },
     
     {
-    name: "Weebly – The easiest web builder among the newbies and professional designers",
+    name: "Weebly",
     description: "As one of the most popular website development tools among people who want to start their own sites, Weebly is very easy-to-use and aimed at personal, business and professional websites. Above all, it enables you to make site-building work without any coding experience, meanwhile you can choose to edit the HTML/CSS if you have the coding background.",
     Download: "https://www.weebly.com"
     },
     
     {
-    name: "Adobe Dreamweaver – One of the most trustworthy web developer tools",
+    name: "Adobe Dreamweaver",
     description: "This is a proprietary web development tool from Adobe Systems, available for both macOS and Windows. Besides, it provides a nice environment for you to work on the web, which combines with a code editor along with a live view. Another cool thing is the software offers free trial, which gives you some time to experiment and see whether it’s right for you.",
     Download: "https://www.adobe.com/sea/products/dreamweaver.html"
     },
@@ -35,7 +35,7 @@ let list = [
     },
     
     {
-    name: "Codepen - The best online code editor and open-source learning environment",
+    name: "Codepen",
     description: "CodePen is a web development environment to build, test, and discover front-end code to learn and debug. It's a friendly development environment for front-end designers and developers to find design patterns and inspiration.",
     Download: "https://codepen.io"
     },
