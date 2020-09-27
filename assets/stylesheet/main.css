@@ -12,7 +12,7 @@ applet,
 object,
 iframe,
 h1,
-h2,`
+h2,
 h3,
 h4,
 h5,
@@ -146,8 +146,9 @@ table {
 
 body {
     font-size: 16px;
-    font-family: 'Roboto';
-    height: 1hr;
+    font-family: 'Raleway', sans-serif;
+    height: 100vh;
+    text-align: center;
 
 }
 
@@ -158,52 +159,80 @@ a {
 .container {
     max-width: 1320px;
     margin: 0 auto;
+}
 
+.content-box{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 10px 0;
 }
 
  
 
 #user {
     font-size: 40px;
-    color: red;
-    font-weight: 700;
+    color:tomato;
+    text-shadow: 1px 1px 3px lightgray;
+    font-weight: 900;
     text-align: center;
     text-transform: capitalize;
+    padding: 20px;
+    
 
 
 }
 
+
+
 .user-welcoming p {
-    color: blue;
+    color:gray;
     text-align: center;
-    font-weight: 300;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px;
 }
 
 
 
 .Software {
-    border-radius: 50px
+    border-radius: 50px;
+   
+    margin-bottom: 10px;
+    border-radius: 50px;
+background: linear-gradient(145deg, #e6e6e6, #ffffff);
+box-shadow:  5px 5px 10px #d9d9d9, 
+             -5px -5px 10px #ffffff;
  }
+
 
 #software-name {
     font-size: 35px;
     padding: 20px 0 20px 0;
-    color: green;
+    color: black;
     font-weight: 700;
-    background-color: #f2f2ff;
+   
     padding-left: 66px;
      border-radius: 15px;
 }
-#software-name:hover{
+/* #software-name:hover{
  
+} */
+
+.description{
+    border-radius: 50px;
+background: linear-gradient(145deg, #e6e6e6, #ffffff);
+box-shadow:  5px 5px 10px #d9d9d9, 
+             -5px -5px 10px #ffffff;
 }
 
 
 .description p {
     padding: 20px 0 20px 0;
     color: tomato;
-    font-weight: 200;
-    background-color: #f2f2f2;
+    font-weight: 400;
+    color: black;
     padding: 66px;
     line-height: 2;
     font-size: 20px;
@@ -212,11 +241,37 @@ a {
 
 }
 
-
-
-#website-link {
+.website{
+    padding: 20px;
+    margin:20px 0;
+}
+#software-link {
     font-size: 25px;
+    padding: 20px;
+    color: black;
+    background: linear-gradient(145deg, #e0e1e1, #ffffff);
+    box-shadow: 20px 10px 25px #eaebeb,
+        -20px -10px 25px #ffffff;
+        border-radius: 27px;
+
+}
+
+#software-link:hover{
+    color: red;
+    font-weight: 900;
+    
+   
+    position: relative;
   
+    margin-bottom: 25px;
+    border-radius: 32px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+background: #f1f4f1;
+box-shadow: inset 5px 5px 24px #cdcfcd, 
+            inset -5px -5px 24px #ffffff;
+
 }
 
 
@@ -240,7 +295,7 @@ a {
 
 
 .random-software-generate {
-    background: linear-gradient(266.78deg, #60D77A 9.25%, #2FB94D 93.72%);
+    /* background: linear-gradient(266.78deg, #60D77A 9.25%, #2FB94D 93.72%); */
     width: 100%;
     height: 55px;
     border-bottom-left-radius: 40px;
@@ -248,8 +303,22 @@ a {
     display: grid;
     align-items: center;
     justify-content: center;
+    background: linear-gradient(145deg, #e6e6e6, #ffffff);
+box-shadow:  5px 5px 10px #d9d9d9, 
+             -5px -5px 10px #ffffff;
+    
 
 
+}
+
+
+
+.random-software-generate:active{
+    opacity: 1;
+    box-shadow: inset -4px -4px 8px rgba(255, 255, 255, 0.5),
+      inset 8px 8px 16px rgba(0, 0, 0, 0.1);
+    color: #79e3b6;
+  
 }
 
 #random-generate {
@@ -259,5 +328,5 @@ a {
     cursor: pointer;
     font-weight: 700;
     outline: none;
-    color: white;
+    color: black;
 }
