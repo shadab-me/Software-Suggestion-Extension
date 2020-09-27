@@ -1,6 +1,8 @@
 let name = document.querySelector('#software-name');
 let link = document.querySelector('#software-link');
 let des = document.querySelector('#software-des');
+let randomgen = document.querySelector('#random-generate');
+
 
 function RandomSoftware(arr){
    return (Math.floor(Math.random() * list.length)+1);
@@ -14,3 +16,5 @@ let software = list[RandomSoftware()];
  }
 
 CreateUi();
+
+randomgen.addEventListener('click', CreateUi);
