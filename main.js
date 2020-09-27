@@ -7,3 +7,5 @@ RandomSoftware();
 list.forEach((item) => {
    console.log(item.name)
 })
+
+/* pushpendra kumar */
