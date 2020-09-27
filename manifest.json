@@ -2,31 +2,10 @@
     "name": "Help Buddy",
     "version": "1.0",
     "description": "It Will Help You to Manage Your time uses of internet.",
-    "permissions": [
-        "alarms",
-        "contextMenus",
-        "storage",
-        "notifications",
-        "webRequest",
-        "webRequestBlocking",
-        "<all_urls>"
-      ],
-    "background": 
-        {
-            "script": ["background.js"]
-        }
-      ,
-    
-    "browser_action": {
-       "default_popup": "index.html",
-       "default_icon": {
-           "16": "images/get_started16.png",
-           "32": "images/get_started32.png",
-           "48": "images/get_started48.png",
-           "128": "images/get_started128.png"
-       }
-    },
-    "icons":{
+    "chrome_url_overrides": {
+      "newtab": "index.html"
+       },
+        "icons":{
         "16": "images/get_started16.png",
         "32": "images/get_started32.png",
         "48": "images/get_started48.png",
